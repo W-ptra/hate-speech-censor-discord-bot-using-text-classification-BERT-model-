@@ -8,6 +8,7 @@ load_dotenv()
 TOKEN = os.getenv("TOKEN")
 
 # Loading model, tokenizer
+# Download and extract model from https://drive.google.com/file/d/19tEGqeOi2KezHv6h7X3cEa3AUOhlU5SS/view?usp=sharing
 model_path = "BERT model"
 model = BertForSequenceClassification.from_pretrained(model_path)
 tokenizer = BertTokenizer.from_pretrained(model_path)
