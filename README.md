@@ -8,6 +8,7 @@ There are 4 model available:
 4. [RoBERTa base](https://huggingface.co/wisnu001binus/hate_speech_detection_RoBERTabase)
 
 Each Model have been fine-tuned using 726.120 text sample for text classification  
+Dataset Source: [Research paper](https://www.sciencedirect.com/science/article/pii/S2352340922010356) and [Repository](https://data.mendeley.com/datasets/9sxpkmm8xn/1)
 # How to Use?
 1. Clone repository  
 ``git clone https://github.com/W-ptra/hate-speech-censor-discord-bot-using-text-classification-BERT-model.git``  
