@@ -1,17 +1,27 @@
+'''
+    Model Available:
+    +=================+====================================================+
+    | Model           | Repository                                         |
+    +=================+====================================================+
+    | BERT base       | wisnu001binus/hate_speech_detection_BERTbase       |
+    | DistilBERT base | wisnu001binus/hate_speech_detection_DistilBERTbase |
+    | ALBERT base     | wisnu001binus/hate_speech_detection_ALBERTbase     |
+    | RoBERTa base    | wisnu001binus/hate_speech_detection_RoBERTabase    |
+    +=================+====================================================+
+'''
 import os
 import discord
 from dotenv import load_dotenv
-from transformers import pipeline,BertForSequenceClassification, BertTokenizer
+from transformers import pipeline,DistilBertForSequenceClassification, DistilBertTokenizerFast
 
 #load environment variable
 load_dotenv()
 TOKEN = os.getenv("TOKEN")
 
 # Loading model, tokenizer
-# Download and extract model from https://drive.google.com/file/d/19tEGqeOi2KezHv6h7X3cEa3AUOhlU5SS/view?usp=sharing
-model_path = "BERT model"
-model = BertForSequenceClassification.from_pretrained(model_path)
-tokenizer = BertTokenizer.from_pretrained(model_path)
+model_repository = "wisnu001binus/hate_speech_detection_DistilBERTbase"
+model = DistilBertForSequenceClassification.from_pretrained(model_repository)
+tokenizer = DistilBertTokenizerFast.from_pretrained(model_repository)
 
 # Create pipeline
 predict = pipeline("sentiment-analysis", model=model, tokenizer=tokenizer)
@@ -39,11 +49,15 @@ async def on_message(message):
     # text classification 
     classification = predict(message.content)
     label = classification[0]["label"]
+    score = classification[0]["score"]
+
+    #Message log
+    print(f"| {label} with {score*100:.2f}% | {message.content}")
     
     # delete message if classified as hatespeech
     if label == "hatespeech":
         await message.delete()
-        await message.channel.send("message deleted")
-    
+        await message.channel.send(f"{message.author.mention} message deleted")
+
 # Run the bot with your token
 client.run(TOKEN)
