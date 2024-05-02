@@ -5,7 +5,8 @@ There are 4 model available:
 1. [BERT base](https://huggingface.co/wisnu001binus/hate_speech_detection_BERTbase)
 2. [DistilBERT base](https://huggingface.co/wisnu001binus/hate_speech_detection_DistilBERTbase)
 3. [ALBERT base](https://huggingface.co/wisnu001binus/hate_speech_detection_ALBERTbase)
-4. [RoBERTa base](https://huggingface.co/wisnu001binus/hate_speech_detection_RoBERTabase)  
+4. [RoBERTa base](https://huggingface.co/wisnu001binus/hate_speech_detection_RoBERTabase)
+
 Each Model have been fine-tuned using 726.120 text sample for text classification  
 # How to Use?
 1. Clone repository  
