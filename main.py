@@ -51,7 +51,7 @@ async def on_message(message):
     label = classification[0]["label"]
     score = classification[0]["score"]
 
-    #Message log
+    # Message log
     print(f"| {label} with {score*100:.2f}% | {message.content}")
     
     # delete message if classified as hatespeech
