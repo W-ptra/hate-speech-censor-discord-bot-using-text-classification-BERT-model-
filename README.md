@@ -22,3 +22,4 @@ Run following script, replace ``TOKEN`` with your actual discord bot token
 ```
 docker run -d -e TOKEN={your discord bot token} --name bot wisnup001binus/hate_speech_censor_discord_bot:1.0
 ```
+the proccess will be done in average 5 minutes or depending on your internet collection
