@@ -17,4 +17,8 @@ git clone https://github.com/W-ptra/hate-speech-censor-discord-bot-using-text-cl
 ```  
 2. Edit ``.env`` file replace ``TOKEN`` with your real discord bot token  
 
-##
+# Docker Usage
+Run following script, replace ``TOKEN`` with your actual discord bot token
+```
+docker run -d -e TOKEN={your discord bot token} --name bot wisnup001binus/hate_speech_censor_discord_bot:1.0
+```
