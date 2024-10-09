@@ -8,7 +8,7 @@ There are 4 model available:
 3. [ALBERT base](https://huggingface.co/wisnu001binus/hate_speech_detection_ALBERTbase)
 4. [RoBERTa base](https://huggingface.co/wisnu001binus/hate_speech_detection_RoBERTabase)
 
-Each Model have been fine-tuned using 726.120 text sample for text classification  
+Each Model have been fine-tuned using **726.120** text sample for text classification  
 Dataset Source: [Research paper](https://www.sciencedirect.com/science/article/pii/S2352340922010356) and [Repository](https://data.mendeley.com/datasets/9sxpkmm8xn/1)
 ## How to Use?
 1. Clone repository  
@@ -18,7 +18,7 @@ git clone https://github.com/W-ptra/hate-speech-censor-discord-bot-using-text-cl
 2. Edit ``.env`` file replace ``TOKEN`` with your real discord bot token  
 
 # Docker Usage
-Run following script, replace ``TOKEN`` with your actual discord bot token
+Run following script, replace ``TOKEN`` with your actual discord bot token (token can be received thru [Discord Developer Portal](https://www.bing.com/ck/a?!&&p=ebee8242a8cac48dJmltdHM9MTcyODQzMjAwMCZpZ3VpZD0zYjI0MmFhYi0yY2U5LTZkMjktMmRhYy0zZmI4MmRlODZjODEmaW5zaWQ9NTE5NQ&ptn=3&ver=2&hsh=3&fclid=3b242aab-2ce9-6d29-2dac-3fb82de86c81&psq=discord+developer+portal&u=a1aHR0cHM6Ly9kaXNjb3JkLmNvbS9kZXZlbG9wZXJz&ntb=1))
 ```
 docker run -d -e TOKEN={your discord bot token} --name bot wisnup001binus/hate_speech_censor_discord_bot:1.0
 ```
