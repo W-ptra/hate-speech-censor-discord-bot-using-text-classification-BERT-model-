@@ -7,7 +7,10 @@ There are 4 model available:
 2. [DistilBERT base](https://huggingface.co/wisnu001binus/hate_speech_detection_DistilBERTbase)
 3. [ALBERT base](https://huggingface.co/wisnu001binus/hate_speech_detection_ALBERTbase)
 4. [RoBERTa base](https://huggingface.co/wisnu001binus/hate_speech_detection_RoBERTabase)
-
+| Column 1      | Column 2      |
+| ------------- | ------------- |
+| Cell 1, Row 1 | Cell 2, Row 1 |
+| Cell 1, Row 2 | Cell 1, Row 2 |
 Each Model have been fine-tuned using **726.120** text sample for text classification  
 Dataset Source: [Research paper](https://www.sciencedirect.com/science/article/pii/S2352340922010356) and [Repository](https://data.mendeley.com/datasets/9sxpkmm8xn/1)
 ## How to Use?
