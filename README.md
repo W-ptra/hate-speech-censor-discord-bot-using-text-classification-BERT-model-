@@ -10,6 +10,8 @@ There are 4 model available:
   
 Each Model have been fine-tuned using **726.120** text sample for text classification  
 Dataset Source: [Research paper](https://www.sciencedirect.com/science/article/pii/S2352340922010356) and [Repository](https://data.mendeley.com/datasets/9sxpkmm8xn/1)
+## Prerequisite
+min of ``python version 3.11.2`` or ``Docker`` installed  on your device 
 ## How to Use?
 1. Clone repository  
 ```
